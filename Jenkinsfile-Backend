@@ -82,7 +82,7 @@ pipeline {
         }
         stage('Checkout Code') {
             steps {
-                git credentialsId: 'github', url: 'https://github.com/laxman-kandhukuri/Three-Tier-DevSecOps'
+                 git branch: 'main', credentialsId: 'github', url: 'https://github.com/laxman-kandhukuri/Three-Tier-DevSecOps'
             }
         }
         stage('Update Deployment file') {
